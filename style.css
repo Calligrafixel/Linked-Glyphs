@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Linked";
+  src: url(Linked-Regular.woff) format('woff')
+}
+* {
+    margin: 0 auto;
+}
+
+
+main #text {    
+    position: relative;
+    left: 50%;
+    
+    width: 80%;
+    margin-top: 30%;
+    margin-left: -40%;
+    
+    font-family: "Linked";
+    font-size: 3rem;
+}
