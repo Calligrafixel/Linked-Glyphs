@@ -6,15 +6,17 @@
     margin: 0 auto;
 }
 
-
+main li {
+    font-family: "Linked";
+}
 main #text {    
     position: relative;
     left: 50%;
     
     width: 80%;
-    margin-top: 30%;
+    margin-top: 10%;
     margin-left: -40%;
     
     font-family: "Linked";
-    font-size: 3rem;
+    font-size: 6rem;
 }
