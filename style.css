@@ -1,5 +1,6 @@
 * {
     margin: 0 auto;
+    font-family: "Jetbrains Mono";   
 }
 
 @font-face {
@@ -23,8 +24,8 @@ main {
     position: absolute;
     height: 80vh;
 
-    top: 50vh;
-    left: 3vw;
+    top: 40.5vh;
+    left: 9vw;
     
     margin-top: -25vh;
 
@@ -37,8 +38,8 @@ main #preview {
     border: 0px solid;
     
     border-radius: 2vw;
-    height: 63vh;
-    width: 94vw;    
+    height: 59vh;
+    width: 76vw;    
 /*    background: #111;*/
     background: none;
     overflow: hidden;
@@ -54,27 +55,6 @@ main #preview:focus {
     outline: none;
 }
 
-side .arrow {
-    height: 25vh;
-}
-#x_axis {
-    position: fixed;
-    top: -5vh;
-    left: -20vw;
-}
-#y_axis {
-    transform: rotate(90deg);
-    position: fixed;
-    top: -8vh;
-    left: -56vw;
-}
-#x_func {
-    color: white;
-}
-
-#y_fucc {
-
-}
 .deco {
     font-family: 'JetBrains Mono', monospace;
     color: white;
@@ -105,4 +85,54 @@ footer #copy {
     position: relative;
     left: 2vw;
     top: .3vh;
+}
+
+.arrow {
+    height: 25vh;
+}
+#x_axis {
+    position: fixed;
+    top: -5vh;
+    left: -20vw;
+}
+#y_axis {
+    transform: rotate(90deg);
+    position: fixed;
+    top: -16vh;
+    left: -53.4vw;
+}
+#x_func {
+    color: white;
+    position: absolute;
+    font-size: 2vh;
+    top: 86.5vh;
+    left: 4vh;
+}
+#y_func {
+    color: white;
+    position: absolute;
+    font-size: 2vh;
+    top: 5.8vh;
+    left: 158vh;
+}
+
+#z_func {
+    color: white;
+    position: absolute;
+    font-size: 2vh;
+    top: 79vh;
+    left: 155vh;
+}
+#copy {
+    color: gray;
+    position: absolute;
+    font-size: 2vh;
+    top: 86vh;
+    left: 50vh;
+}
+#copy .lt {
+    color: white;
+}
+#copy .it {
+    font-style: italic;
 }
