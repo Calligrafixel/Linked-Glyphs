@@ -136,3 +136,26 @@ footer #copy {
 #copy .it {
     font-style: italic;
 }
+
+.popup {
+    color: gray;
+    position: absolute;
+    font-size: 2vh;
+    top: 15vh;
+    left: 12vh;
+    background: black;
+    
+    color: white;
+    
+    padding-top: 35vh;
+    padding-left: 60vh;
+/*    border: 5px solid white;*/
+    width: 80vh;
+    height: 27vh;
+}
+#info_popup {
+    display: none;
+}
+#process_popup {
+    display: none;
+}
