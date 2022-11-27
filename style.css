@@ -55,18 +55,18 @@ main #preview:focus {
 }
 
 side .arrow {
-    height: 5vh;
+    height: 25vh;
 }
 #x_axis {
     position: fixed;
-    top: 5vh;
-    left: -55vw;
+    top: -5vh;
+    left: -20vw;
 }
 #y_axis {
     transform: rotate(90deg);
     position: fixed;
-    top: -38vh;
-    left: -66vw;
+    top: -8vh;
+    left: -56vw;
 }
 #x_func {
     color: white;
