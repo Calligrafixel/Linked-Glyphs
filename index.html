@@ -4,38 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="refresh" content="120">
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+
     <title>한글꼴연구회</title>
     <script src="hangul.js" type="text/javascript"></script>
 </head>
 <body>
     <main>
-        <textarea name="" id="preview" cols="30" rows="10" placeholder="글자를 자유롭게 입력해 보세요" spellcheck="false"></textarea>
+        <textarea name="" id="preview" cols="30" rows="10" placeholder=" 글자를 입력해 보세요 " spellcheck="false"></textarea>
     </main>
     <div id="x_axis">
         <img src="img/arrow.svg" alt="" class="arrow">
     </div>
-    <div id="x_func">
-        getFirstChar(<br>
-        &emsp;&emsp;this-><br>
-        &emsp;&emsp;consonant<br>
-        );
-    </div>
     <div id="y_axis">
         <img src="img/arrow.svg" alt="" class="arrow">
     </div>
-    <div id="y_func">
-        getMiddleChar(<br>
-        &emsp;&emsp;this-><br>
-        &emsp;&emsp;vowel<br>
-        );
-    </div>
-    <div id="z_func">
-        getLastChar(<br>
-        &emsp;&emsp;this->{<br>
-        &emsp;&emsp;&emsp;&emsp;None or<br>
-        &emsp;&emsp;&emsp;&emsp;consonant<br>
-        &emsp;&emsp;}<br>
-        );
+    <div id="func">
+        <span class="gr">/* 초성[첫_닿자]을_<span class="it">return</span>함 */</span><br>
+        <span class="it">getFirstChar</span>( <span class="it">this</span>->consonant ) {<br>
+        &emsp;&emsp;retrun [<br>
+        &emsp;&emsp;&emsp;&emsp;"ㄱ", "ㄲ", ... , "ㅎ"<br>
+        &emsp;&emsp;] ~~> <span class="it">find</span>();<br>
+        }<br>
+        <br>
+        <span class="gr">/* 중성[홀자]을_<span class="it">return</span>함 */</span><br>
+        <span class="it">getMiddleChar</span>( <span class="it">this</span>->vowel ) {<br>
+        &emsp;&emsp;retrun [<br>
+        &emsp;&emsp;&emsp;&emsp;"ㅏ", "ㅐ", ... , "ㅣ"<br>
+        &emsp;&emsp;] ~~> <span class="it">find</span>();<br>
+        }<br>
+        <br>
+        <span class="gr">/* 종성[받침_닿자]을_<span class="it">return</span>함</span> */<br>
+        <span class="it">getLastChar</span>( <span class="it">this</span>->{<br>
+        &emsp;&emsp;&emsp;&emsp;None or consonant}) {<br>
+        &emsp;&emsp;retrun [<br>
+        &emsp;&emsp;&emsp;&emsp;"∅", "ㄱ", ... , "ㅎ"<br>
+        &emsp;&emsp;] ~~> <span class="it">find</span>();<br>
+        }<br>
+        <br>
+        <br>
+        <span class="gr">/* 앞뒤_글자꼴을<span class="it">_서로_link</span>함 */</span><br>
+        <span class="it">linkGlyphs</span>( LEFT, RIGHT ) {<br>
+        &emsp;&emsp;combin(<br>
+        &emsp;&emsp;&emsp;&emsp;LEFT~~><span class="it">rightHeight</span>() <span class="it">and</span><br>
+        &emsp;&emsp;&emsp;&emsp;RIGHT~~><span class="it">leftHeight</span>()<br>
+        &emsp;&emsp;);<br>
+        <br>
+        <span class="it">swapHalfGlyph</span>(LEFT, RIGHT);<br>
+        }
     </div>
     
     <div id="copy">

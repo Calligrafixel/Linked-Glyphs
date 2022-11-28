@@ -1,6 +1,7 @@
 * {
     margin: 0 auto;
-    font-family: "Jetbrains Mono";   
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 400;
 }
 
 @font-face {
@@ -13,8 +14,6 @@
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap');
-
 body {
     background-color: black;
     color: white;
@@ -24,8 +23,8 @@ main {
     position: absolute;
     height: 80vh;
 
-    top: 40.5vh;
-    left: 9vw;
+    top: 43vh;
+    left: 8.8vw;
     
     margin-top: -25vh;
 
@@ -39,9 +38,9 @@ main #preview {
     
     border-radius: 2vw;
     height: 59vh;
-    width: 76vw;    
-/*    background: #111;*/
+    width: 65vw; 
     background: none;
+/*    background: #333;*/
     overflow: hidden;
     
     color: white;
@@ -88,53 +87,44 @@ footer #copy {
 }
 
 .arrow {
-    height: 25vh;
+    height: 26vh;
 }
 #x_axis {
     position: fixed;
     top: -5vh;
-    left: -20vw;
+    left: -15vw;
 }
 #y_axis {
     transform: rotate(90deg);
     position: fixed;
-    top: -16vh;
-    left: -53.4vw;
-}
-#x_func {
-    color: white;
-    position: absolute;
-    font-size: 2vh;
-    top: 86.5vh;
-    left: 4vh;
-}
-#y_func {
-    color: white;
-    position: absolute;
-    font-size: 2vh;
-    top: 5.8vh;
-    left: 158vh;
+    top: -10vh;
+    left: -55.4vw;
 }
 
-#z_func {
+#func {
     color: white;
     position: absolute;
-    font-size: 2vh;
-    top: 79vh;
-    left: 155vh;
+    font-size: 1.75vh;
+    top: 20.2vh;
+    left: 136vh;
 }
+
+
 #copy {
     color: gray;
     position: absolute;
     font-size: 2vh;
-    top: 86vh;
-    left: 50vh;
+    top: 88vh;
+    left: 33vh;
 }
-#copy .lt {
+.lt {
     color: white;
 }
-#copy .it {
+.it {
     font-style: italic;
+}
+.gr {
+    color: #aaa;
 }
 
 .popup {
