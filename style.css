@@ -108,18 +108,18 @@ footer #copy {
 #func {
     color: white;
     position: absolute;
-    font-size: 1.75vh;
-    top: 20.2vh;
-    left: 136vh;
+    font-size: 1vh;
+    top: 20.3vh;
+    left: 146vh;
 }
 
 
 #copy {
     color: gray;
     position: absolute;
-    font-size: 2vh;
+    font-size: 1vh;
     top: 86.5vh;
-    left: 28vh;
+    left: 43vh;
 }
 .lt {
     color: white;
