@@ -9,10 +9,21 @@
   font-weight: 700;
   src: url("Linked-Regular.woff") format("woff2");
 }
-@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
-.notosanskr * { 
-    font-family: 'Noto Sans KR', sans-serif;
+
+
+@font-face {
+    font-family: 'MonoplexKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_Monoplex-kr@1.0/MonoplexKR-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
 }
+@font-face {
+    font-family: 'MonoplexKR-Italic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_Monoplex-kr@1.0/MonoplexKR-Italic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
 
 body {
     background-color: black;
@@ -126,7 +137,10 @@ footer #copy {
 .gr {
     color: #aaa;
 }
-
+.bd {
+    font-weight: 900;
+    text-shadow: 0px 0px 20px white;
+}
 .popup {
     color: gray;
     position: absolute;
@@ -136,12 +150,16 @@ footer #copy {
     background: black;
     
     color: white;
-    
-    padding-top: 35vh;
-    padding-left: 60vh;
+    font-family: 'MonoplexKR-Regular';
+    font-weight: 600;
+    padding-top: 19vh;
+    padding-left: 21vh;
+    padding-right: 10vh;
 /*    border: 5px solid white;*/
-    width: 80vh;
-    height: 27vh;
+    width: 90vh;
+    height: 51vh;
+    word-break: keep-all;
+    line-height: 1.8;
 }
 #info_popup {
     display: none;

@@ -7,14 +7,14 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;1,400;1,500,900&display=swap" rel="stylesheet">
 
     <title>한글꼴연구회</title>
     <script src="hangul.js" type="text/javascript"></script>
 </head>
 <body>
     <main>
-        <textarea name="" id="preview" cols="30" rows="10" placeholder=" 글자를 입력해 보세요 " spellcheck="false"></textarea>
+        <textarea name="" id="preview" cols="30" rows="10" placeholder=" 글자를 입력해 보세요글자를 입력해 보세요글자를 입력해 보세요글자를 입력해 보세요글자를 입력해 보세요글자를 입력해 보세요글자를 입력해 보세요글자를 입력해 보세요글자를 입력해 보세요글자를 입력해 보세요글자를 입력해 보세요글자를 입력해 보세요 " spellcheck="false"></textarea>
     </main>
     <div id="x_axis">
         <img src="img/arrow.svg" alt="" class="arrow">
@@ -26,14 +26,18 @@
         <span class="gr">/* 초성[첫_닿자]을_<span class="it">return</span>함 */</span><br>
         <span class="it">getFirstChar</span>( <span class="it">this</span>->consonant ) {<br>
         &emsp;&emsp;retrun [<br>
-        &emsp;&emsp;&emsp;&emsp;"ㄱ", "ㄲ", ... , "ㅎ"<br>
+        &emsp;&emsp;&emsp;&emsp;<span class="bd">
+            "ㄱ", "ㄲ", ... , "ㅎ"
+        </span><br>
         &emsp;&emsp;] ~~> <span class="it">find</span>();<br>
         }<br>
         <br>
         <span class="gr">/* 중성[홀자]을_<span class="it">return</span>함 */</span><br>
         <span class="it">getMiddleChar</span>( <span class="it">this</span>->vowel ) {<br>
         &emsp;&emsp;retrun [<br>
-        &emsp;&emsp;&emsp;&emsp;"ㅏ", "ㅐ", ... , "ㅣ"<br>
+        &emsp;&emsp;&emsp;&emsp;<span class="bd">
+            "ㅏ", "ㅐ", ... , "ㅣ"
+        </span><br>
         &emsp;&emsp;] ~~> <span class="it">find</span>();<br>
         }<br>
         <br>
@@ -41,7 +45,9 @@
         <span class="it">getLastChar</span>( <span class="it">this</span>->{<br>
         &emsp;&emsp;&emsp;&emsp;None or consonant}) {<br>
         &emsp;&emsp;retrun [<br>
-        &emsp;&emsp;&emsp;&emsp;"∅", "ㄱ", ... , "ㅎ"<br>
+        &emsp;&emsp;&emsp;&emsp;<span class="bd">
+            "∅", "ㄱ", ... , "ㅎ"
+        </span><br>
         &emsp;&emsp;] ~~> <span class="it">find</span>();<br>
         }<br>
         <br>
@@ -64,12 +70,17 @@
 
    
     <div class="popup" id="info_popup">
-        Not Prepared Yet!<br>
-        &emsp;&emsp;CLOSE: [3]
+        글꼴 <span class="gr">&lt;font_name></span>사슬<span class="gr">&lt;/font_name></span>은 낱자들 사이의 얽힘과 꼬임에 가장 큰 초점을 둔 글꼴입니다. 사슬은 독립적인 낱자들의 단순한 집합으로 표현되지 않습니다. 모든 낱자들은 자기 자신만의 <span class="gr">&lt;left></span>왼쪽 끝<span class="gr">&lt;/left></span>과 <span class="gr">&lt;right></span>오른쪽 끝<span class="gr">&lt;/right></span>을 가지며, 이는 곧 다른 낱자들과 상호작용하는 도구로써 기능합니다.<br>
+        &emsp;&emsp;모든 낱자들은 유기적이고 연속적으로 연결되어 있습니다. 그것이 바로 이 글꼴을 <span class="gr">&lt;font_name></span>사슬<span class="gr">&lt;/font_name></span>이라고 일컫는 이유일 것입니다. 글자는 멈춰있지 않으며 끊임없이 공간과 상황에서 적응하고 탈바꿈하는 <span class="gr">&lt;object></span>객체<span class="gr">&lt;/object></span>입니다.<br>
+        <br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;CLOSE: [3]
     </div>
     <div class="popup" id="process_popup">
-        Not Prepared Yet!<br>
-        &emsp;&emsp;CLOSE: [3]
+        이 굉장한 <span class="gr">&lt;font_name></span>사슬<span class="gr">&lt;/font_name></span>이라는 글꼴을 도대체 과연 어떻게 제작했을까요? 알고리즘의 설계는 <span class="gr">&lt;lang></span>Python<span class="gr">&lt;/lang></span>에서 진행하고, 웹에서의 그 구현은 <span class="gr">&lt;lang></span>Javascript<span class="gr">&lt;/lang></span>를 사용하였습니다.<br>
+        &emsp;&emsp;모든 낱자들은 사슬로 연결될 가능성을 갖고 있습니다. 이에 따라, 자신의 왼쪽 혹은 오른쪽 낱자와 연결되기 적합한 부분을 찾는데 이것이 <span class="gr">&lt;f></span><span class="it">leftHeight()</span><span class="gr">&lt;/f></span>과 <span class="gr">&lt;f></span><span class="it">rightHeight()</span><span class="gr">&lt;/f></span>입니다. 낱자 사이를 연결할 사슬의 형태가 결정되면 이후 각 자모들은 스스로 그 형태가 변화하며, 그 결과 또 하나의 새로운 사슬이 연결됩니다.
+        <br>
+        <br>
+         &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;CLOSE: [3]
     </div>
     
     <script src="script.js"></script>
