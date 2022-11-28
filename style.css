@@ -112,7 +112,9 @@ footer #copy {
     top: 20.3vh;
     left: 146vh;
 }
-
+#manual {
+    font-size: 1.55vh;
+}
 
 #copy {
     color: gray;
